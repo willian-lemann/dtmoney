@@ -33,7 +33,7 @@ export const Summary = () => {
       <SummaryCard highlight>
         <HeaderContainer>
           <Title>Total</Title>
-          <TotalIcon />
+          <TotalIcon /> 
         </HeaderContainer>
 
         <Amount>R$500,00</Amount>
