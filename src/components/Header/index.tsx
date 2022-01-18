@@ -1,12 +1,18 @@
 import { Container, Content, Logo, AddTransationButton } from "./styles";
 
-export const Header = () => {
+interface HeaderProps {
+  onOpenNewTransactionModal: () => void;
+}
+
+export const Header = ({ onOpenNewTransactionModal }: HeaderProps) => {
   return (
     <Container>
       <Content>
         <Logo />
 
-        <AddTransationButton>Nova transação</AddTransationButton>
+        <AddTransationButton onClick={onOpenNewTransactionModal}>
+          Nova transação
+        </AddTransationButton>
       </Content>
     </Container>
   );

@@ -22,6 +22,7 @@ export const TransactionsTable = () => {
 
     return amount;
   };
+
   return (
     <Container>
       <TableContainer>
